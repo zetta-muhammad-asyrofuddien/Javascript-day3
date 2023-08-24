@@ -1,4 +1,5 @@
 function bookPurchasing(name, price, disc, tax) {
+  let title = 'Gramedia Store';
   const discount = disc != 0 ? true : false;
   let amountDisc;
   let afterDisc = price;
@@ -12,7 +13,7 @@ function bookPurchasing(name, price, disc, tax) {
   let afterTax = afterDisc - amountTax;
 
   console.log('--------------------------------------------------');
-  console.log('Gramedia Store');
+  console.log(title);
   console.log('--------------------------------------------------');
   console.log('Nama Buku                    : ' + name);
   console.log('Harga Buku                   : ' + price);
