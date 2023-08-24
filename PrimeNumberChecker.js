@@ -1,17 +1,10 @@
-/**
- *
- * Write a Node.js function isPrime(n) that takes an integer n as an argument and returns true if n is a prime number and false otherwise.
- *
- */
 function isPrime(n) {
   // Your logic here
 
   //Prima harus lebih dari sama dengan 1
   if (n <= 1) {
     return false;
-  }
-  //2 dan 3 adalah pembagi terkecil (hanya bisa di bagi 1 dan angka itu sendiri)
-  if (n <= 3) {
+  } else if (n <= 3) {
     return true;
   }
 
@@ -31,3 +24,9 @@ function isPrime(n) {
 
 console.log(isPrime(10));
 console.log(isPrime(43));
+
+for (let i = 0; i < 50; i++) {
+  if (isPrime(i)) {
+    console.log(i + ' : Is Prime');
+  }
+}
