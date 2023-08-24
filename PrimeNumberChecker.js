@@ -1,14 +1,12 @@
 function isPrime(n) {
   // Your logic here
 
-  //Prima harus lebih dari sama dengan 1
   if (n <= 1) {
     return false;
   } else if (n <= 3) {
     return true;
   }
 
-  //2 dan 3 adalah pembagi terkecil (hanya bisa di bagi 1 dan angka itu sendiri)
   if (n % 2 === 0 || n % 3 === 0) {
     return false;
   }
@@ -23,9 +21,9 @@ function isPrime(n) {
 }
 
 console.log(isPrime(10));
-console.log(isPrime(43));
+console.log(isPrime(111));
 
-for (let i = 0; i < 50; i++) {
+for (let i = 0; i < 120; i++) {
   if (isPrime(i)) {
     console.log(i + ' : Is Prime');
   }
