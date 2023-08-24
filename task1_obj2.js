@@ -14,7 +14,7 @@ bookPurchasing = (book, disc, tax) => {
     } else amountDisc = 0;
     amountTax = afterDisc * pajak;
     afterTax = afterDisc - amountTax;
-    bookAdditional[i]['additional'] = {
+    bookAdditional[i].additional = {
       amountDisc: amountDisc,
       afterDisc: afterDisc,
       amountTax: amountTax,
