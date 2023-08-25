@@ -27,9 +27,10 @@ function isPrime(n) {
     }
   }
   // console.log(count);
-  if (count == 2) {
-    return true;
-  }
+  if (count <= 1) {
+    return false;
+  } else if (count == 2) return true;
+
   ////////////////////////////////////////////////////////////////////////////////////////
 
   // if (n > 1) {
@@ -43,11 +44,13 @@ function isPrime(n) {
   // }
 }
 
-console.log(isPrime(10));
-console.log(isPrime(43));
-
-for (let i = -2; i < 120; i++) {
+console.log(isPrime(1));
+console.log(isPrime(2));
+// let c = 0;
+for (let i = -2; i <= 122; i++) {
   if (isPrime(i)) {
-    console.log(i + ' : Is Prime');
+    c += 1;
+    console.log(i + ' ' + isPrime(i));
   }
 }
+// console.log(c);

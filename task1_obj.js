@@ -15,7 +15,7 @@ bookPurchasing = (book, disc, tax) => {
       afterDisc = book[i].price - amountDisc;
     } else amountDisc = 0;
     amountTax = afterDisc * pajak;
-    afterTax = afterDisc - amountTax;
+    afterTax = afterDisc + amountTax;
     console.log('Nama Buku                    : ' + book[i].title);
     console.log('Harga Buku                   : ' + book[i].price);
     console.log('Diskon                       : ' + amountDisc);

@@ -10,7 +10,7 @@ function bookPurchasing(name, price, disc, tax) {
   } else amountDisc = 0;
 
   let amountTax = afterDisc * (tax / 100);
-  let afterTax = afterDisc - amountTax;
+  let afterTax = afterDisc + amountTax;
 
   console.log('--------------------------------------------------');
   console.log(title);
